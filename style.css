@@ -1,0 +1,161 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.hemBody{
+    background-image: url(img/Golftee\ for\ website.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.butikBody{
+    background-image: url(img/Golfer\ for\ website.avif);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.topBar{
+    background-color: rgb(46, 46, 46);
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 16px;
+    position: sticky;
+    top: 0px;
+}
+
+.topBar a {
+    color: white;
+    text-decoration: none;
+    margin-top: 2vh;
+    font-size: 1.5em; 
+}
+
+.T100Länk{
+    color: white;
+    text-decoration: none;
+    margin-top: 2vh;
+}
+
+.topText:hover, .T100Länk:hover{
+    scale: 1.1;
+    color: skyblue;
+}
+
+.contentContainerButik{
+    background-color: rgba(54, 54, 54, 0.742);
+    height: auto;
+    width: 70vw;
+    margin: auto;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.contentContainerHem{
+    background-color: rgba(54, 54, 54, 0.742);
+    height: auto;
+    width: 70vw;
+    margin: auto;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tileistLogo{
+    width: 400px;
+}
+
+.mestPopulär{
+    background-color: red;
+    color: white;
+    font-weight: bolder;
+    font-size: 50px;
+    padding: 10px;
+    border-radius: 50px 50px 50px 50px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+
+.content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+
+.productBox{
+    background-color: red;
+}
+
+.product{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 325px 20px 20px;
+    background-color: white;
+    width: 400px;
+    height: 400px;
+    min-width: 250;
+    min-height: 400px;
+    margin: auto;
+    padding: 10px;
+}
+.product > p{
+    overflow: hidden;
+    width: 380px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.product > img{
+    width: 250px;
+    margin: auto;
+}
+
+.product > h1{
+    background-color: red;
+    color: whitesmoke;
+    border-radius: 15px 15px 15px 15px;
+    padding: 7px;
+    margin: auto;
+    
+}
+
+footer{
+    background-color: rgb(46, 46, 46);
+    height: 20vh;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 930px){
+    .contentContainerButik, .contentContainerHem{
+        min-width: 650px;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .topBar > a{
+        font-size: 1.2em;
+        margin-top: 3vh;
+    }
+    .contentContainerButik, .contentContainerHem{
+        width: 100vw;
+        height: auto;
+        min-width: 0px;
+    }
+    .product{
+       margin: auto;
+    }
+
+    .product > p{
+        width: 300px;
+    }
+}
