@@ -3,6 +3,10 @@
     margin: 0;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 .hemBody{
     background-image: url(img/Golftee\ for\ website.jpg);
     background-attachment: fixed;
@@ -129,10 +133,22 @@
 
 footer{
     background-color: rgb(46, 46, 46);
-    height: 20vh;
+    height: auto;
     display: flex;
     justify-content: space-evenly;
     font-size: 16px;
+    width: 100vw;
+}
+
+.contact1, .contact2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.contact{
+    color: white;
 }
 
 @media screen and (max-width: 930px){
